@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/stylesheet.css" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="container">
+    <header class="rowFlex">
+        <a href="../index.html">
+            <img src="../assets/img/logo.png" alt="Logo" width="200">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./habitaciones.html">Habitaciones</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contacto">
+        <section id="banner-contacto">
+            <img src="../assets/img/banner-bardas.jpeg" alt="Banner principal" class="imagen-contacto">
+        </section>
+        <section id="formulario" class="formulario">
+            <div class="contacto-titulo">
+                <h3>ESTAMOS PARA RESPONDERTE</h3>
+                <p>Escribinos y consultanos cualquier duda que tengas. Te estamos esperando.</p>
+            </div>
+            <form action="">
+                <fieldset>
+                    <label for="nombre">
+                        Nombre <input type="text" name="Nombre" id="nombre">
+                    </label>
+                    <label for="apellido">
+                        Apellido <input type="text" name="Apellido" id="apellido">
+                    </label>
+                    <label for="email">
+                        Correo electronico <input type="email" name="Email" placeholder="tumail@email.com" id="email">
+                    </label>
+                    <label for="codArea">
+                        Cod. de area <input type="number" name="CodArea" placeholder="Ej 011" id="codArea">
+                    </label>
+                    <label for="telefono">
+                        Telefono <input type="number" name="Telefono" placeholder="Ej 1555533321" id="telefono">
+                    </label>
+                    <label for="genero">
+                        Genero <select name="Genero" id="genero" id="genero">
+                            <option value="masculino">Hombre</option>
+                            <option value="femenimo">Mujer</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </label>
+                    <div class="box-consulta">
+                        <label for="consulta">
+                            Consulta <textarea name="consulta" id="consulta" cols="30" rows="10"
+                                id="consulta"></textarea>
+                        </label>
+                    </div>
+                    <div class="box-newsletter">
+                        <label for="newsletter">
+                            ¿Querés recibir nuestras ofertas? <input type="checkbox" name="newsletter" value="1"
+                                id="newsletter">
+                        </label>
+                    </div>
+                    <input type="submit" value="Enviar formulario" class="button">
+                    <input type="reset" value="Limpiar formulario" class="button">
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>Bardas al Sur SRL.</p>
+        <p>Tel: +54 911 38383 838383</p>
+        <p>E-mail: mail@mail.com</p>
+    </footer>
+</div>
+</body>
+
+</html>
