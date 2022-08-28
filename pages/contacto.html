@@ -5,83 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/stylesheet.css" />
     <title>Contacto</title>
 </head>
 
 <body>
-    <div class="container">
-    <header class="rowFlex">
-        <a href="../index.html">
-            <img src="../assets/img/logo.png" alt="Logo" width="200">
-        </a>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./habitaciones.html">Habitaciones</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="contacto">
-        <section id="banner-contacto">
-            <img src="../assets/img/banner-bardas.jpeg" alt="Banner principal" class="imagen-contacto">
-        </section>
-        <section id="formulario" class="formulario">
-            <div class="contacto-titulo">
-                <h3>ESTAMOS PARA RESPONDERTE</h3>
-                <p>Escribinos y consultanos cualquier duda que tengas. Te estamos esperando.</p>
-            </div>
-            <form action="">
-                <fieldset>
-                    <label for="nombre">
-                        Nombre <input type="text" name="Nombre" id="nombre">
-                    </label>
-                    <label for="apellido">
-                        Apellido <input type="text" name="Apellido" id="apellido">
-                    </label>
-                    <label for="email">
-                        Correo electronico <input type="email" name="Email" placeholder="tumail@email.com" id="email">
-                    </label>
-                    <label for="codArea">
-                        Cod. de area <input type="number" name="CodArea" placeholder="Ej 011" id="codArea">
-                    </label>
-                    <label for="telefono">
-                        Telefono <input type="number" name="Telefono" placeholder="Ej 1555533321" id="telefono">
-                    </label>
-                    <label for="genero">
-                        Genero <select name="Genero" id="genero" id="genero">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <div class="container-fluid g-0">
+        <header class="rowFlex">
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo" width="200">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./habitaciones.html">Habitaciones</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contacto">
+            <section id="banner-contacto">
+                <img src="../assets/img/banner-bardas.jpeg" alt="Banner principal" class="imagen-contacto">
+            </section>
+            <section id="formulario" class="formulario">
+                <div class="contacto-titulo">
+                    <h3>ESTAMOS PARA RESPONDERTE</h3>
+                    <p>Escribinos y consultanos cualquier duda que tengas. Te estamos esperando.</p>
+                </div>
+                <form action="" class="row g-3 align-items-center m-2">
+                    <div class="form-floating col-md-6">
+                        <input type="text" name="Nombre" id="nombre" class="form-control" placeholder="Tu Nombre">
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="form-floating col-md-6">
+                        <input type="text" name="Apellido" id="apellido" class="form-control" placeholder="Tu Apellido">
+                        <label for="apellido">Apellido</label>
+                    </div>
+                    <div class="form-floating col-md-6">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="tumail@email.com">
+                        <label for="email">Correo electrónico</label>
+                    </div>
+                    <div class="form-floating col-md-6">
+                        <input type="number" name="CodArea" id="codarea" class="form-control" placeholder="CodArea">
+                        <label for="codarea">Codigo de Área</label>
+                    </div>
+                    <div class="form-floating col-md-6">
+                        <input type="number" name="Telefono" id="telefono" class="form-control" placeholder="Teléfono">
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                    <div class="form-floating col-md-6">
+                        <select name="Genero" class="form-select" id="genero" id="genero">
+                            <option selected>Seleccione</option>
                             <option value="masculino">Hombre</option>
                             <option value="femenimo">Mujer</option>
                             <option value="otro">Otro</option>
                         </select>
-                    </label>
-                    <div class="box-consulta">
-                        <label for="consulta">
-                            Consulta <textarea name="consulta" id="consulta" cols="30" rows="10"
-                                id="consulta"></textarea>
-                        </label>
+                        <label for="genero">Genero</label>
                     </div>
-                    <div class="box-newsletter">
-                        <label for="newsletter">
-                            ¿Querés recibir nuestras ofertas? <input type="checkbox" name="newsletter" value="1"
-                                id="newsletter">
-                        </label>
+                    <div class="form-floating col-12">
+                        <textarea name="consulta" class="form-control" id="consulta" id="consulta" placeholder="Dejanos tu comentario."></textarea>
+                        <label for="consulta">Consulta</label>
                     </div>
-                    <input type="submit" value="Enviar formulario" class="button">
-                    <input type="reset" value="Limpiar formulario" class="button">
-                </fieldset>
-            </form>
-        </section>
+                    <div class="form-check col-12">
+                        <input type="checkbox" name="newsletter" value="1" id="newsletter" class="form-check-input" />
+                        <label for="newsletter" class="form-check-label">¿Querés recibir nuestras ofertas?</label>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-primary col-md-6">Enviar formulario</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="reset" class="btn btn-danger col-md-6">Limpiar formulario</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <p>Bardas al Sur SRL.</p>
+            <p>Tel: +54 911 38383 838383</p>
+            <p>E-mail: mail@mail.com</p>
+        </footer>
     </div>
-    <footer>
-        <p>Bardas al Sur SRL.</p>
-        <p>Tel: +54 911 38383 838383</p>
-        <p>E-mail: mail@mail.com</p>
-    </footer>
-</div>
 </body>
 
 </html>
