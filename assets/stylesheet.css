@@ -1,4 +1,4 @@
-* {
+* , ::after, ::before {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -386,6 +386,7 @@ footer {
 footer p {
     display: flex;
     text-align: center;
+    margin-bottom: 0 !important;
 }
 
 
