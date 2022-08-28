@@ -481,4 +481,8 @@ footer p {
         justify-content: space-around;
         padding-top: 20px;
     }
+
+    footer p {
+        font-size: small;
+    }
 }
