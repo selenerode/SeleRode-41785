@@ -93,6 +93,11 @@ section#habitaciones-destacadas {
     margin: 20px;
 }
 
+.room-card:hover {
+    animation: pulse;
+    animation-duration: 2s;
+}
+
 .room-card img {
     height: 200px;
     width: 250px;
@@ -151,13 +156,20 @@ th {
     margin: 50px 50px;
     display: flex;
     justify-content: space-between;
+
 }
+
 
 .comodidades-card {
     display: grid;
     align-items: center;
     align-content: center;
     text-align: center;
+    transition: all 0.5s ease;
+}
+
+.comodidades-card:hover {
+    transform: scale(1.5);
 }
 
 .comodidades-card img {
@@ -220,8 +232,6 @@ th {
     width: 200px;
     height: 120px;
     margin-left: 35px;
-
-
 }
 
 .service-text p {
@@ -234,10 +244,21 @@ th {
     text-transform: uppercase;
 }
 
+.service-card:hover .service-text {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 149, 120, 0.39821866246498594) 0%, rgba(188, 223, 209, 1) 100%);
+    transition: 0.7s;
+}
+
+.service-card:hover .service-icon {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 205, 166, 1) 0%, rgba(188, 223, 209, 1) 100%);
+}
+
 .service-card:hover .service-text,
 .service-card:hover .service-icon {
-    background-color: #009578;
-    transition: 0.7s;
+    animation: pulse;
+    animation-duration: 2s;
 }
 
 /* Estilos pagina contacto */
@@ -433,29 +454,30 @@ footer p {
         align-items: center;
     }
 
-    .iconos{
+    .iconos {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .grid-container{
+    .grid-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .nosotros-grid{
+    .nosotros-grid {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #formulario fieldset{
+    #formulario fieldset {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     footer {
         grid-area: footer;
         display: flex;
