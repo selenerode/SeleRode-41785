@@ -80,7 +80,7 @@ header img {
 }
 
 .navbar a:hover {
-    color: #c1dcd1;
+    color: #c1dcd1 !important;
 }
 
 /* Estilos pagina Home */
