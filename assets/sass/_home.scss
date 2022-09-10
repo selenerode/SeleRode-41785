@@ -1,0 +1,60 @@
+/* Estilos pagina Home */
+#carousel-bardas {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+section#habitaciones-destacadas {
+    background-color: $section-color-secondary;
+}
+
+.rooms {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem 0 5rem;
+}
+
+.room-card {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    box-shadow: $shadow-variant;
+    margin: 20px;
+
+    img {
+        height: 200px;
+        width: 250px;
+    }
+
+    &:hover {
+        animation: pulse;
+        animation-duration: 2s;
+    }
+}
+
+.card-title {
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reviews-table {
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+td,
+th {
+    border: $border-standard;
+}
