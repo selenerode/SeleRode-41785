@@ -1,0 +1,46 @@
+/* Estilos barra de navegacion */
+header,
+.rowFlex {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    height: 70px;
+    box-shadow: $shadow-primary;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+header img {
+    margin: 10px;
+    width: 170px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: flex-end;
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+        display: flex;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        width: 150px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover {
+            color: $color-secondary  !important;
+        }
+    }
+}
