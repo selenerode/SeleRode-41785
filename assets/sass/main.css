@@ -1,4 +1,6 @@
-/* Variables */ /* Estilos barra de navegacion */
+/* Variables */
+/* Mapas */
+/* Estilos barra de navegacion */
 header,
 .rowFlex {
   display: flex;
@@ -41,6 +43,7 @@ header img {
   color: #c1dcd1 !important;
 }
 
+/* Mixins */
 /* Estilos pagina Home */
 #carousel-bardas {
   height: 100vh;
@@ -49,6 +52,16 @@ header img {
 
 .carousel-inner {
   height: 100%;
+}
+
+.subtitulo, .subtitulo--secundario {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  font-size: 30px;
+}
+
+.subtitulo--secundario {
+  text-decoration: underline;
 }
 
 section#habitaciones-destacadas {
@@ -65,7 +78,6 @@ section#habitaciones-destacadas {
   display: flex;
   height: 250px;
   width: 250px;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
   margin: 20px;
 }
 .room-card img {
@@ -100,6 +112,19 @@ table,
 td,
 th {
   border: 1px solid black;
+}
+
+/* Aca uso Map Get */
+#room1 {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+#room2 {
+  box-shadow: 0 0.125rem 1.25rem rgba(194, 255, 0, 0.75);
+}
+
+#room3 {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
 /*Estilos responsive */
