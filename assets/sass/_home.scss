@@ -8,6 +8,17 @@
     height: 100%;
 }
 
+.subtitulo {
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-size: 30px;
+}
+
+.subtitulo--secundario {
+    @extend .subtitulo;
+    text-decoration: underline
+}
+
 section#habitaciones-destacadas {
     background-color: $section-color-secondary;
 }
@@ -60,13 +71,15 @@ th {
 }
 
 /* Aca uso Map Get */
-@each $room, $estilo in $rooms {
+@each $room,
+$estilo in $rooms {
     $estilos : $room-classic;
-    @if $estilo == 'featured'{
-    $estilos : $room-featured;
+
+    @if $estilo =='featured' {
+        $estilos : $room-featured;
     }
+
     ##{$room} {
         box-shadow: map-get($estilos, box-shadow)
     }
- }
- 
+}

@@ -53,6 +53,16 @@ header img {
   height: 100%;
 }
 
+.subtitulo, .subtitulo--secundario {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  font-size: 30px;
+}
+
+.subtitulo--secundario {
+  text-decoration: underline;
+}
+
 section#habitaciones-destacadas {
   background-color: #fafafa;
 }
