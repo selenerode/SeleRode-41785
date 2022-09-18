@@ -6,3 +6,19 @@ $shadow-variant: 0 0.125rem 0.25rem rgb(0 0 0 / 20%);
 $section-color-primary: #ffffff;
 $section-color-secondary: #fafafa;
 $border-standard: 1px solid black;
+
+/* Mapas */
+
+$rooms: (
+    room1: classic,
+    room2: featured,
+    room3: classic,
+);
+
+$room-featured: (
+    box-shadow: 0 0.125rem 1.25rem rgb(194 255 0 / 75%)
+);
+
+$room-classic: (
+    box-shadow: $shadow-variant
+);

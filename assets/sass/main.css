@@ -1,4 +1,6 @@
-/* Variables */ /* Estilos barra de navegacion */
+/* Variables */
+/* Mapas */
+/* Estilos barra de navegacion */
 header,
 .rowFlex {
   display: flex;
@@ -65,7 +67,6 @@ section#habitaciones-destacadas {
   display: flex;
   height: 250px;
   width: 250px;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
   margin: 20px;
 }
 .room-card img {
@@ -100,6 +101,19 @@ table,
 td,
 th {
   border: 1px solid black;
+}
+
+/* Aca uso Map Get */
+#room1 {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+#room2 {
+  box-shadow: 0 0.125rem 1.25rem rgba(194, 255, 0, 0.75);
+}
+
+#room3 {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 
 /*Estilos responsive */

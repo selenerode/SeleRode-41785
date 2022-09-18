@@ -22,7 +22,7 @@ section#habitaciones-destacadas {
     display: flex;
     height: 250px;
     width: 250px;
-    box-shadow: $shadow-variant;
+    //box-shadow: $shadow-variant;
     margin: 20px;
 
     img {
@@ -58,3 +58,15 @@ td,
 th {
     border: $border-standard;
 }
+
+/* Aca uso Map Get */
+@each $room, $estilo in $rooms {
+    $estilos : $room-classic;
+    @if $estilo == 'featured'{
+    $estilos : $room-featured;
+    }
+    ##{$room} {
+        box-shadow: map-get($estilos, box-shadow)
+    }
+ }
+ 
