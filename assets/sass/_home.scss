@@ -1,7 +1,13 @@
+/* Mixins */
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ 
+
 /* Estilos pagina Home */
 #carousel-bardas {
-    height: 100vh;
-    width: 100%;
+    @include sizes(100%, 100vh);
 }
 
 .carousel-inner {
@@ -31,14 +37,12 @@ section#habitaciones-destacadas {
 
 .room-card {
     display: flex;
-    height: 250px;
-    width: 250px;
+    @include sizes(250px, 250px);
     //box-shadow: $shadow-variant;
     margin: 20px;
 
     img {
-        height: 200px;
-        width: 250px;
+        @include sizes(250px, 200px);
     }
 
     &:hover {
