@@ -494,6 +494,10 @@ footer p {
     text-transform: uppercase;
     font-weight: bold;
   }
+  .carousel-inner img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
   .rooms {
     display: flex;
     flex-direction: column;

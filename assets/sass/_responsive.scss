@@ -56,7 +56,12 @@
             font-weight: bold;
         }
     }
-
+    
+    .carousel-inner {
+        img {
+            object-fit: fill;
+        }
+    }
     .rooms {
         display: flex;
         flex-direction: column;
