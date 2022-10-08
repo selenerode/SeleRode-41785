@@ -2,7 +2,6 @@
 header,
 .rowFlex {
     display: flex;
-    align-items: center;
     padding: 15px;
     justify-content: space-between;
     height: 70px;
@@ -11,9 +10,17 @@ header,
     flex-wrap: nowrap;
 }
 
-header img {
-    margin: 10px;
-    width: 170px;
+header {
+    a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    img {
+        margin: 10px;
+        width: 170px;
+    }
 }
 
 .navbar {

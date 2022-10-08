@@ -1,0 +1,30 @@
+/* Estilos pagina Sobre Nosotros */
+
+#nosotros-titulo {
+    margin-top: 30px;
+}
+
+.nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px;
+    gap: 25px;
+    align-items: center;
+}
+
+.nosotros-grid #nosotros-body {
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 40px;
+    grid-column: 1 / 3;
+}
+
+.nosotros-grid #nosotros-imagen {
+    grid-column: 3 / -1;
+}
+
+#nosotros-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}

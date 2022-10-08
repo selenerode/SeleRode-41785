@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cabañas vacacionales ubicadas sobre las bardas del Paso Cordova en las afueras de la ciudad General Roca de la provincia de Rio Negro Argentina">
-    <meta name="keywords" content="BARDAS, CABAÑAS, TURISMO, VACACIONES, SUR, MONTAÑA, HABITACION, SERVICIOS, HUESPEDES">
+    <meta name="description"
+        content="Cabañas vacacionales ubicadas sobre las bardas del Paso Cordova en las afueras de la ciudad General Roca de la provincia de Rio Negro Argentina">
+    <meta name="keywords"
+        content="BARDAS, CABAÑAS, TURISMO, VACACIONES, SUR, MONTAÑA, HABITACION, SERVICIOS, HUESPEDES">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -106,30 +108,47 @@
                 <div class="subtitulo--secundario">
                     <h1>Nuestros huespedes</h1>
                 </div>
-                <div class="reviews-table">
-                    <table>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Comentario</th>
-                            <th>Fecha</th>
-                        </tr>
-                        <tr>
-                            <td>Mario Gomez</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deleniti.</td>
-                            <td>29-3-2022</td>
-                        </tr>
-                        <tr>
-                            <td>Victoria Smith</td>
-                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, vel!</td>
-                            <td>17-6-2022</td>
-                        </tr>
-                        <tr>
-                            <td>Carla Perez</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nulla.</td>
-                            <td>02-7-2002</td>
-                        </tr>
-
-                    </table>
+                <div id="carousel-reviews" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-header">
+                                    Quote
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>A well-known quote, contained in a blockquote element.</p>
+                                        <card-footer class="blockquote-footer">Someone famous in <cite
+                                                title="Source Title">Source Title</cite></card-footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-header">
+                                    Quote 2
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>A well-known quote, contained in a blockquote element.</p>
+                                        <card-footer class="blockquote-footer">Someone famous in <cite
+                                                title="Source Title">Source Title</cite></card-footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-reviews"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-reviews"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
         </main>
