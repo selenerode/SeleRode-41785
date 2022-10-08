@@ -498,6 +498,10 @@ footer p {
     -o-object-fit: fill;
        object-fit: fill;
   }
+  .slider img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
   .rooms {
     display: flex;
     flex-direction: column;
