@@ -1,6 +1,6 @@
 /* Variables */
-$color-primary: #98c6b3;
-$color-secondary: #c1dcd1;
+$color-primary: #9AC5B2;
+$color-secondary: #019579;
 $shadow-primary: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
 $shadow-variant: 0 0.125rem 0.25rem rgb(0 0 0 / 20%);
 $section-color-primary: #ffffff;
@@ -16,7 +16,7 @@ $rooms: (
 );
 
 $room-featured: (
-    box-shadow: 0 0.125rem 1.25rem rgb(194 255 0 / 75%)
+    box-shadow: 0 0.125rem 1.25rem rgba(197, 213, 145, 0.75)
 );
 
 $room-classic: (

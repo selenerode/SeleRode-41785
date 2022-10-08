@@ -2,16 +2,21 @@
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
- }
- 
+}
+
 
 /* Estilos pagina Home */
 #carousel-bardas {
-    @include sizes(100%, 100vh);
+    @include sizes(100%, 70vh);
+    object-fit: cover;
 }
 
 .carousel-inner {
     height: 100%;
+
+    img {
+        object-fit: cover;
+    }
 }
 
 .subtitulo {
@@ -31,18 +36,17 @@ section#habitaciones-destacadas {
 
 .rooms {
     display: flex;
-    justify-content: space-between;
-    padding: 0 5rem 0 5rem;
+    justify-content: space-around;
 }
 
 .room-card {
     display: flex;
-    @include sizes(250px, 250px);
+    @include sizes(300px, auto);
     //box-shadow: $shadow-variant;
     margin: 20px;
 
     img {
-        @include sizes(250px, 200px);
+        @include sizes(300px, 200px);
     }
 
     &:hover {
@@ -58,8 +62,34 @@ section#habitaciones-destacadas {
     text-transform: uppercase;
 }
 
-.reviews-table {
-    margin: 10px;
+#reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .card {
+        width: 70%
+    }
+
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+#carousel-reviews {
+    @include sizes(100%, auto);
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        background-color: $color-secondary;
+        border-radius: 25%;
+    }
 }
 
 table {

@@ -1,0 +1,60 @@
+/* Estilos pagina contacto */
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 10px;
+}
+
+#banner-contacto,
+#formulario {
+    grid-row: 1 / 2;
+}
+
+#banner-contacto {
+    grid-column: 1 / -1;
+}
+
+#banner-contacto img {
+    @include sizes(100%, 70vh);
+    object-fit: cover;
+}
+
+#formulario {
+    margin-top: 15%;
+    background-color: white;
+    grid-column: 2 / 5;
+    background-color: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.contacto-titulo {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#formulario h3 {
+    font-weight: bold;
+    color: #98c6b3;
+    padding-bottom: 5px;
+}
+
+#formulario p {
+    padding-bottom: 15px;
+}
+
+#formulario textarea{
+    height: 100px;
+}
+
+#formulario button{
+    width: 100%
+}
+
+.form-check{
+    text-align: center;
+}
+.form-check .form-check-input{
+    float: none;
+}

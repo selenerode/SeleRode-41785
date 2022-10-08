@@ -1,0 +1,74 @@
+/* Estilos pagina servicios */
+
+#banner-pages{
+    img{
+        @include sizes(100%, 70vh);
+        object-fit: cover;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    position: absolute;
+    z-index: 2;
+    border: 5px solid white;
+    background-color: #c1dcd1;
+    border-radius: 50%;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.service-icon img {
+    width: 100%;
+    background: none;
+}
+
+.service-text {
+    display: table;
+    z-index: 1;
+    background-color: #c1dcd1;
+    width: 200px;
+    height: 120px;
+    margin-left: 35px;
+}
+
+.service-text p {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+.service-card:hover .service-text {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 149, 120, 0.39821866246498594) 0%, rgba(188, 223, 209, 1) 100%);
+    transition: 0.7s;
+}
+
+.service-card:hover .service-icon {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 205, 166, 1) 0%, rgba(188, 223, 209, 1) 100%);
+}
+
+.service-card:hover .service-text,
+.service-card:hover .service-icon {
+    animation: pulse;
+    animation-duration: 2s;
+}

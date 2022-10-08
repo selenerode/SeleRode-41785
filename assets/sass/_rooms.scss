@@ -1,0 +1,66 @@
+/* Estilos pagina de habitaciones */
+.habitaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habitaciones_label {
+    padding: 10px 16px;
+}
+
+.habitaciones_radio {
+    display: none;
+}
+
+.habitaciones_content {
+    order: 1;
+    width: 100%;
+    line-height: 1.5;
+    display: none;
+}
+
+.slider img {
+    @include sizes(100%, 70vh);
+    object-fit: cover;
+}
+
+.iconos {
+    margin: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.comodidades-card {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.comodidades-card:hover {
+    transform: scale(1.5);
+}
+
+.comodidades-card img {
+    width: 100%;
+}
+
+.comodidades-card label {
+    padding: 30px;
+    font-weight: 600;
+}
+
+
+.habitaciones_radio:checked+.habitaciones_label {
+    font-weight: bold;
+    color: #009578;
+    border-bottom: 2px solid #009578;
+}
+
+.habitaciones_radio:checked+.habitaciones_label+.habitaciones_content {
+    display: initial;
+}

@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cabañas vacacionales ubicadas sobre las bardas del Paso Cordova en las afueras de la ciudad General Roca de la provincia de Rio Negro Argentina">
-    <meta name="keywords" content="BARDAS, CABAÑAS, TURISMO, VACACIONES, SUR, MONTAÑA, HABITACION, SERVICIOS, HUESPEDES">
+    <meta name="description"
+        content="Cabañas vacacionales ubicadas sobre las bardas del Paso Cordova en las afueras de la ciudad General Roca de la provincia de Rio Negro Argentina">
+    <meta name="keywords"
+        content="BARDAS, CABAÑAS, TURISMO, VACACIONES, SUR, MONTAÑA, HABITACION, SERVICIOS, HUESPEDES">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -80,7 +82,7 @@
                         <a href="./pages/habitaciones.html">
                             <img src="./assets/img/habitacion1.jpeg" alt="Habitacion 1">
                             <div class="card-title">
-                                <h5>Habitacion 1</h5>
+                                <h5>Suite</h5>
                             </div>
                         </a>
                     </div>
@@ -88,7 +90,7 @@
                         <a href="./pages/habitaciones.html">
                             <img src="./assets/img/habitacion2.jpeg" alt="Habitacion 2">
                             <div class="card-title">
-                                <h5>Habitacion 2</h5>
+                                <h5>Family Loft</h5>
                             </div>
                         </a>
                     </div>
@@ -96,7 +98,7 @@
                         <a href="./pages/habitaciones.html">
                             <img src="./assets/img/habitacion3.jpeg" alt="Habitacion 3">
                             <div class="card-title">
-                                <h5>Habitacion 3</h5>
+                                <h5>Loft Deluxe</h5>
                             </div>
                         </a>
                     </div>
@@ -106,37 +108,69 @@
                 <div class="subtitulo--secundario">
                     <h1>Nuestros huespedes</h1>
                 </div>
-                <div class="reviews-table">
-                    <table>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Comentario</th>
-                            <th>Fecha</th>
-                        </tr>
-                        <tr>
-                            <td>Mario Gomez</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deleniti.</td>
-                            <td>29-3-2022</td>
-                        </tr>
-                        <tr>
-                            <td>Victoria Smith</td>
-                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, vel!</td>
-                            <td>17-6-2022</td>
-                        </tr>
-                        <tr>
-                            <td>Carla Perez</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nulla.</td>
-                            <td>02-7-2002</td>
-                        </tr>
-
-                    </table>
+                <div id="carousel-reviews" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-header">
+                                   Excelente estadía
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>Un lugar sin igual que todos deberían conocer alguna vez.
+                                        </p>
+                                        <card-footer class="blockquote-footer">Mariana Perez <cite
+                                                title="Source Title">Septiembre 2022</cite></card-footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-header">
+                                    Un lugar soñado
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>El personal es muy cálido y las actividades que realizamos nos encantaron!</p>
+                                        <card-footer class="blockquote-footer">Gastón Campos<cite
+                                                title="Source Title"> Diciembre 2021</cite></card-footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-header">
+                                    Superó nuestras expectativas
+                                </div>
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                        <p>Las cabañas estan equipadas con todo lo necesario para unos días de descanso. Ojalá tengamos la posibilidad de volver con mi familia. </p>
+                                        <card-footer class="blockquote-footer">Marta Sanchez<cite
+                                                title="Source Title"> Mayo 2022</cite></card-footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-reviews"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-reviews"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
         </main>
         <footer>
             <p>Bardas al Sur SRL.</p>
             <p>Tel: +54 911 38383 838383</p>
-            <p>E-mail: mail@mail.com</p>
+            <p>E-mail: info@bardasalsur.com.ar</p>
         </footer>
     </div>
 </body>
